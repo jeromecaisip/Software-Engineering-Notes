@@ -61,5 +61,45 @@ maintainable and clean.
 17. Don't add unnecessary context.
 
 
+# Chapter 3 - Functions
+
+1. Functions should be small. 
+
+2. Blocks and indenting. Block within `if`, `else` , `while` and so on should only be one/two line long. Probably that line should be a 
+function call. Indent level should not be greater than one or two.
+
+3. It should do one thing. They should do it well. They should do it only. 
+
+4. Function that do one thing cannot be reasonably divided into sections.
+
+5. One level of abstraction per function. (step down rule)
+
+6. Use descriptive names. Be consistent with naming, should allow the sequence to tell a story.
+
+7. Try to minimize function arguments. If the functions requires more than two to three arguments, probably they should be wrapped into a class or object.
+
+8. Avoid [flag arguments](https://www.martinfowler.com/bliki/FlagArgument.html).
+
+9. Have no side-effects. (It violates the rule: Do one thing well.)
+
+10. Avoid output arguments. [Output arguments are objects that the method operates on, and then returns](https://medium.com/@webprolific/my-takeaways-from-clean-code-a70ca8382884). 
+If your function must change the state of something, have it change the state of its owning object.
+
+11. Command Query Separation. Function should either do something or answer something, but not both.
+
+12. Prefer exceptions rather than error codes.
+
+13. Extract the bodies of `try/catch` blocs out into functions of their own.
+
+14. Functions should do one thing. Error handling is one thing. Thus, a function that handles errors should do nothing else. See no.13 .
+
+15. DRY (Don't repeat yourself). Refactor to make things DRY.
+
+16. "Make it work. Make it right. Make it fast.". Writing good functions is a process. Write a draft first then refactor while keeping the tests passing. 
+
+
+
+
+
 
 
